@@ -25,7 +25,7 @@ const server = express();
 server.use("/images", express.static(path.join(__dirname, "images")));  
 ​
 server.post("/webhook", line.middleware(lineConfig), (req, res) => {
-  // LINEのサーバーに200を返す
+//LINEのサーバーに200を返す
   res.sendStatus(200);
 ​// コンストは定数変数
   for (const event of req.body.events) {
